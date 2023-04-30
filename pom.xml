@@ -61,11 +61,11 @@
 
     <distributionManagement>
         <repository>
-            <id>packagecloud.release</id>
+            <id>packagecloud.releases</id>
             <url>packagecloud+https://packagecloud.io/ddataylor/release</url>
         </repository>
         <snapshotRepository>
-            <id>packagecloud.snapshot</id>
+            <id>packagecloud.snapshots</id>
             <url>packagecloud+https://packagecloud.io/ddataylor/snapshot</url>
         </snapshotRepository>
     </distributionManagement>
