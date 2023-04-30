@@ -15,5 +15,10 @@
                 ${env.packagecloud_token}
             </password>
         </server>
+        <server>
+            <id>github</id>
+            <username>ddataylor@gmail.com</username>
+            <password>${env.github_token}</password>
+        </server>
     </servers>
 </settings>
