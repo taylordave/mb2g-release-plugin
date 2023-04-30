@@ -4,7 +4,7 @@
 
     <groupId>guru.springframework</groupId>
     <artifactId>mb2g-release-plugin</artifactId>
-    <version>1.18-SNAPSHOT</version>
+    <version>1.2-SNAPSHOT</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,10 +32,10 @@
     </dependencies>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/springframeworkguru/mb2g-release-plugin.git</developerConnection>
-        <url>https://github.com/springframeworkguru/mb2g-release-plugin</url>
-        <tag>HEAD</tag>
-    </scm>
+        <developerConnection>scm:git:https://github.com/taylordave/mb2g-release-plugin.git</developerConnection>
+        <url>https://github.com/taylordave/mb2g-release-plugin.git</url>
+      <tag>HEAD</tag>
+  </scm>
 
     <build>
         <extensions>
@@ -51,27 +51,21 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.22.0</version>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
+            <plugin><groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
-                <configuration>
-
-                    <scmCommentPrefix>[maven-release-plugin] [skip ci]</scmCommentPrefix>
-
-                </configuration>
             </plugin>
         </plugins>
     </build>
 
     <distributionManagement>
         <repository>
-            <id>packagecloud.release</id>
-            <url>packagecloud+https://packagecloud.io/springframeworkguru/release</url>
+            <id>packagecloud.releases</id>
+            <url>packagecloud+https://packagecloud.io/ddataylor/release</url>
         </repository>
         <snapshotRepository>
-            <id>packagecloud.snapshot</id>
-            <url>packagecloud+https://packagecloud.io/springframeworkguru/snapshot</url>
+            <id>packagecloud.snapshots</id>
+            <url>packagecloud+https://packagecloud.io/ddataylor/snapshot</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
