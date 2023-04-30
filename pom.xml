@@ -34,7 +34,7 @@
     </dependencies>
 
     <scm>
-        <developerConnection>scm:https://github.com/taylordave/mb2g-release-plugin.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/taylordave/mb2g-release-plugin.git</developerConnection>
         <url>https://github.com/taylordave/mb2g-release-plugin.git</url>
     </scm>
 
